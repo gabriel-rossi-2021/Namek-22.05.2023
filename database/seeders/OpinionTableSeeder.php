@@ -20,6 +20,7 @@ class OpinionTableSeeder extends Seeder
         $opinion = new Opinions();
         $opinion->notation = 4;
         $opinion->comment = "Au top, le goût le parfum y est, vraiment une bonne surprise.";
+        $opinion->etat = "Actif";
         $opinion->user_id = 1; // Admin
         $opinion->product_id = 1; // Lemon Haze
         $opinion->created_at = Carbon::now();
@@ -30,6 +31,7 @@ class OpinionTableSeeder extends Seeder
         $opinion = new Opinions();
         $opinion->notation = 4;
         $opinion->comment = "Si vous cherchez une CBD qui a un bon goût d'agrume, c'est celle qui vous faut";
+        $opinion->etat = "Actif";
         $opinion->user_id = 1; // Admin
         $opinion->product_id = 2; // 24K
         $opinion->created_at = Carbon::now();
@@ -40,6 +42,7 @@ class OpinionTableSeeder extends Seeder
         $opinion = new Opinions();
         $opinion->notation = 4;
         $opinion->comment = "Au top pour de la cbd je recommande fortement.";
+        $opinion->etat = "Actif";
         $opinion->user_id = 1; // Admin
         $opinion->product_id = 3; // Amnezia
         $opinion->created_at = Carbon::now();
@@ -53,6 +56,7 @@ class OpinionTableSeeder extends Seeder
         $opinion = new Opinions();
         $opinion->notation = 5;
         $opinion->comment = "Parfait !";
+        $opinion->etat = "Passif";
         $opinion->user_id = 2; // User 2
         $opinion->product_id = 1; // Lemon Haze
         $opinion->created_at = Carbon::now();
@@ -63,6 +67,7 @@ class OpinionTableSeeder extends Seeder
         $opinion = new Opinions();
         $opinion->notation = 4;
         $opinion->comment = "Un très bon goût en bouche.";
+        $opinion->etat = "Actif";
         $opinion->user_id = 2; // User 2
         $opinion->product_id = 2; // 24K
         $opinion->created_at = Carbon::now();
@@ -72,7 +77,8 @@ class OpinionTableSeeder extends Seeder
         // Créeation commentaire
         $opinion = new Opinions();
         $opinion->notation = 3;
-        $opinion->comment = "Très bonne, mais grosse branche";
+        $opinion->comment = "Très bonne, mais des putains de grosse branche";
+        $opinion->etat = "Passif";
         $opinion->user_id = 2; // User 2
         $opinion->product_id = 3; // Amnezia
         $opinion->created_at = Carbon::now();
@@ -85,6 +91,7 @@ class OpinionTableSeeder extends Seeder
         $opinion = new Opinions();
         $opinion->notation = 2;
         $opinion->comment = "Fumer tue ! mais super beau site :)";
+        $opinion->etat = "Actif";
         $opinion->user_id = 3; // User 3
         $opinion->product_id = 1; // Lemon Haze
         $opinion->created_at = Carbon::now();
