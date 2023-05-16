@@ -13,7 +13,8 @@ return new class extends Migration
             $table->id('id_opinion')->nullable(false);
             $table->smallInteger('notation')->nullable(false);
             $table->string('comment', 255 )->nullable(false);
-
+            $table->string('etat', 50)->nullable(false);
+            
             // Clé étrangère pour lier le commentaire à l'utilisateur
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id_users')->on('users')->onDelete('cascade');
